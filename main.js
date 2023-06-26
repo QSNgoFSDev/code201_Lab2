@@ -94,3 +94,97 @@ function guessWorkExp(workExp) {
 }
 
 guessWorkExp(WorkExp)
+
+
+// 6th question
+
+
+// let GuessNumberFav = prompt ('how many places is my favorites ?')
+
+
+// function FavPlaceGame(GuessNumberFav) {
+
+//     // we know exactly 4 times to loops, so we use loop "for"
+//     for (i =0; i <= 4; i++ )
+    
+//     {
+
+//         let GNFinside = prompt ('how many places is my favorites ?')
+
+//         if (GuessNumberFav < 2  ) {
+//             alert ('too low')
+            
+
+            
+            
+//         }
+
+//         else if (GuessNumberFav > 4) {
+
+//             alert ('too high')
+//         }
+
+//         else if (GuessNumberFav == 3){
+
+
+//         alert ('correct')}
+        
+
+    
+
+
+//     }
+
+//     alert ('Number of my favorite places is 3')
+//     document.write ('number of my favorite places is 3 ')
+
+    
+// }
+
+// FavPlaceGame(GuessNumberFav)
+
+
+function FavPlaceGame3() {
+  let correctAnswer = 3;
+
+  for (let i = 1; i <= 4; i++) {
+    let guessNumberFav = prompt('How many places is my favorite?');
+
+    if (isNaN (guessNumberFav) =  )
+
+    if (guessNumberFav < correctAnswer) {
+      alert('Too low');
+    } else if (guessNumberFav > correctAnswer) {
+      alert('Too high');
+    } else {
+      alert('Correct!');
+      return; //
+    }
+  }
+
+  alert('You have exhausted all your attempts. The correct answer is 3.');
+}
+
+FavPlaceGame3();
+
+
+function FavPlaceGame() {
+  let correctAnswers = ['Paris', 'London', 'Rome', 'Tokyo', 'New York', 'Sydney'];
+  let attempts = 6;
+
+  for (let i = 1; i <= attempts; i++) {
+    let guess = prompt('Guess one of my favorite places:');
+
+    if (correctAnswers.includes(guess)) {
+      alert('Correct!');
+      return; 
+    //   exit if correct
+    } else {
+      alert('Incorrect!');
+    }
+  }
+
+  alert('You have run out of attempts. The correct answers are: ' + correctAnswers.join(', '));
+}
+
+FavPlaceGame();
